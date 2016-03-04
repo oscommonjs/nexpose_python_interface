@@ -22,10 +22,28 @@ nex = Nexpose(user_vars)
 nex.create_site(site_name, hosts_string, template_id)
 ```
 
+### List Site:
+```python
+nex.list_site()
+```
+
+### Delete Site:
+```python
+nex.delete_site()
+```
+* Optionally you may pass a siteID to delete_site that is not part of the current session.
+
 ### Scan Site:
 ```python
 nex.scan_site()
 ```
-* Optionally you may pass a siteID to scan_site that is not part of current session.
+* Optionally you may pass a siteID to scan_site that is not part of the current session.
 
+### Check Scan Staus:
+```python
+nex.check_scan()
+```
+* Optionally you may pass a siteID to check_scan that is not part of the current session.
+
+### Generate Report:
 
