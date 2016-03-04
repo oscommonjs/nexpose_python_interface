@@ -13,7 +13,8 @@ user_vars = {
 
 nex = Nexpose(user_vars)
 ```
-### Create Site
+### Create Site:
 ```python
 nex.create_site(site_name, hosts_string, template_id)
 ```
+
