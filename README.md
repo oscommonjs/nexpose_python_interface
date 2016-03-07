@@ -39,11 +39,28 @@ nex.scan_site()
 ```
 * Optionally you may pass a siteID to scan_site that is not part of the current session.
 
+### Check Scan Activity
+```python
+nex.scan_activity()
+```
+
 ### Check Scan Staus:
 ```python
 nex.check_scan()
 ```
-* Optionally you may pass a siteID to check_scan that is not part of the current session.
+* Optionally you may pass a scanID to check_scan that is not part of the current session.
 
 ### Generate Report:
+* Current default template-id is set to 'audit-report.'
+```python
+nex.generate_report(file_type)
+```
+* Optionally you may pass a scanID to generate_report that is not part of the current session.
+
+### Vulnerability Listing:
+* List all the vulnerabilities that Nexpose supports.
+```python
+nex.vuln_list()
+```
+
 
